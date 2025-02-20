@@ -2,7 +2,6 @@
   "name": "abstract-plays-pokemon",
   "version": "1.0.0",
   "description": "Abstract plays Pokemon on the portal",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "build": "tsc",
@@ -14,7 +13,13 @@
   "devDependencies": {
     "@types/node": "^22.13.4",
     "dotenv": "^16.4.7",
+    "robotjs": "^0.6.0",
     "stream-chat": "^8.56.1",
     "typescript": "^5.7.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "robotjs"
+    ]
   }
 }
